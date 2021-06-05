@@ -4,7 +4,7 @@
   hosts: localhost
   vars: 
     Uname: "matthewnicastro"
-    Pass: "Zb!t11121997"
+    Pass: "NOT REAL PASSWORD"
     HostName: "localhost:8080"
     TokenName: "11b480bb0bfe89893d1ba779a3459bd7eb"
     JobName: "CICD%20Deployment%20Using%20Ansible%20CM%20Tool"
