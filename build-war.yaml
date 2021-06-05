@@ -1,0 +1,20 @@
+---
+
+- name: Build Deploy war file and restart tomcat9
+  hosts: localhost
+  vars: 
+    Uname: "matthewnicastro"
+    Pass: "Zb!t11121997"
+    HostName: "localhost:8080"
+    TokenName: "11b480bb0bfe89893d1ba779a3459bd7eb"
+    JobName: "CICD%20Deployment%20Using%20Ansible%20CM%20Tool"
+  tasks:
+  - name: Queue build
+    uri:
+      url: "http://{{ HostName }}/job/{{ JobName }}/build?token={{ TokenName }}"
+      method: GET
+      user: "{{Uname}}"
+      password: "{{Pass}}"
+      force_basic_auth: yes
+      status_code: 201
+...
